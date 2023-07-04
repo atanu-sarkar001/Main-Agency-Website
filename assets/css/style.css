@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary: #EF6D58;
+    --blue: #28293E;
+    --heading: #391400;
+    --para: rgba(57, 20, 0, 0.64);
+    --white: #fff;
+    --border: #F3D1BF;
+    --buttons_border: 1px solid rgba(255, 255, 255, 0.295743);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    background: #FDF0E9;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-bg {
+    background-color: var(--blue);
+}
+
+.c-p-right {
+    padding-right: 100px;
+}
+
+.c-p-left {
+    padding-left: 100px;
+}
+
+.btn-custom {
+
+    padding: 16px 22px;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 6px;
+}
+
+.btn-white {
+    background-color: var(--white);
+    color: var(--heading);
+}
+
+.link-btn {
+    color: var(--white);
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.sub-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--primary);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 64px;
+    color: var(--heading);
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--heading);
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--heading);
+}
+
+.master-h1 {
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 80px;
+    color: var(--heading);
+}
+
+.tag-line {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--heading);
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--heading);
+    margin: 0;
+}
+
+.btn-read {
+    color: var(--heading);
+}
+
+.btn-read:hover {
+    color: var(--heading);
+}
+
+.border,
+.border-start,
+.border-end,
+.border-bottom {
+    border-color: var(--primary) !important;
+
+}
+
+/* menu section strat */
+.menu {
+    padding: 10px 0;
+    background-color: var(--blue);
+}
+
+.menu a {
+    color: var(--white);
+}
+
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu li {
+    padding: 10px 20px;
+    transition: all .3s linear;
+}
+
+.menu li:hover {
+    background-color: var(--primary);
+    border-radius: 6px;
+}
+
+.menu .menu-item {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.menu .buttons .menu-btn {
+    border: var(--buttons_border);
+    padding: 16px 34px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all .3s linear;
+}
+
+.menu .buttons .menu-btn:hover {
+    background-color: var(--primary);
+    border-radius: 6px;
+}
+
+/* menu section end */
+
+/* hero section strat */
+.hero {
+    padding: 50px;
+    background: var(--blue);
+}
+
+.hero .heading {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.hero h1 {
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 80px;
+    color: var(--white);
+    letter-spacing: -2px;
+}
+
+.hero p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.64);
+
+}
+
+.hero .message {
+    margin-top: 100px;
+}
+
+/* hero section end */
+/* clients section start */
+.client {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* feature start */
+.feature .card {
+    border-end-end-radius: 0 !important;
+}
+
+.feature .card-2 {
+    border-width: none !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    background: none;
+}
+
+/* feature end */
+/* portfolio section strat */
+.custom-bg ul li a {
+    color: var(--white);
+    position: relative;
+}
+
+.custom-bg ul li a span {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    font-size: 14px;
+}
+
+.portfolio .projects .catagory {
+    border-radius: 50px;
+    color: var(--heading);
+    padding: 10px 25px;
+    text-align: center;
+    background: var(--white);
+    display: inline-block;
+
+}
+
+.portfolio .projects .image {
+    position: relative;
+}
+
+.portfolio .projects .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #5c2000;
+    mix-blend-mode: normal;
+    opacity: 0.32;
+    border-radius: 6px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.portfolio .projects .text {
+    z-index: 11;
+}
+
+/* portfolio section end */
+/* call to action section start */
+.call-to-action .card {
+    border: none;
+    border-radius: 6px;
+    background: #FDF0E9;
+}
+
+.call-to-action .card .text {
+    padding: 60px 80px;
+    padding-top: 70px;
+}
+
+.call-to-action .card .image {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    animation: righttoleft 3s;
+}
+
+@keyframes righttoleft {
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: 100px;
+    }
+}
+
+.call-to-action .card .icon-img {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    transform: translateY(-50%);
+    margin-bottom: 20px;
+}
+
+/* call to action section end */
+
+/* event section start */
+.events .row .border,
+.border-bottom {
+    border-color: #3A3C56 !important;
+}
+
+/* event section end */
+
+/* team section strat */
+
+/* team section end */
+
+/* Founder section start */
+small {
+    color: var(--text-light-gray, rgba(255, 255, 255, 0.64));
+    font-size: 14px;
+    font-family: Epilogue;
+    line-height: 24px;
+}
+
+/* .founder .ok .text-w{
+ font-size: 40px;
+font-family: Epilogue;
+font-weight: 800;
+line-height: 48px;
+color: #fff;
+} */
+.founder .image-2 {
+    position: absolute;
+    top: 7px;
+    right: 4px;
+    z-index: 1;
+}
+
+/* Designer and Developers Section start */
+.teams .desinger .image {
+    border-color: #3A3C56 !important;
+    border-radius: 8px;
+    width: 270px;
+    height: 272px;
+    flex-shrink: 0;
+}
+
+
+.teams .desinger .text p {
+
+    color: var(--text-light-gray, rgba(255, 255, 255, 0.64)) !important;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.team .teams {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    border-radius: 8px;
+}
+
+/* Designer and Developers Section end */
